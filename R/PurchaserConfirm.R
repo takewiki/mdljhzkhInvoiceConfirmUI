@@ -42,7 +42,8 @@ PurchaserConfirmUI_left <- function() {
 
 
   res <- tagList(
-    tsui::mdl_text2(id = 'text_PurchaserConfirm_FBillNO',label ='输入对账单号' ,value ='202508280001' ),
+    #tsui::mdl_text2(id = 'text_PurchaserConfirm_FBillNO',label ='输入对账单号' ,value ='202508280001' ),
+    #查询对账单最新信息
 
     shiny::actionButton(inputId = 'btn_PurchaserConfirm_view',label = '查询'),
 

@@ -42,9 +42,9 @@ ManagerConfirmUI_left <- function() {
 
 
   res <- tagList(
-    tsui::mdl_text2(id = 'text_ManagerConfirm_FBillNO',label ='输入对账单号' ,value ='202508280001' ),
 
-    shiny::actionButton(inputId = 'btn_ManagerConfirm_view',label = '查询'),
+
+    shiny::actionButton(inputId = 'btn_ManagerConfirm_view',label = '查询对账单'),
 
     tsui::mdl_download_button(id = 'dl_ManagerConfirm',label = '下载查询记录到EXCEL'),
 
@@ -64,8 +64,8 @@ ManagerConfirmUI_left <- function() {
 ManagerConfirmUI_right <- function() {
   res <- tagList(
 
-
-    shiny::actionButton(inputId = 'btn_ManagerConfirm_confirm',label = '整单确认')
+    tsui::mdl_text2(id = 'text_ManagerConfirm_FBillNO',label ='输入对账单号' ,value ='202511060001' ),
+    shiny::actionButton(inputId = 'btn_ManagerConfirm_confirm',label = '整单确认并申请')
 
   )
   return(res)
